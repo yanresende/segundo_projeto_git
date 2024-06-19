@@ -7,13 +7,7 @@ const alunos = [
 ];
 
 function alunosAprovados(arrayDeAlunos) {
-    const aprovados = [];
-    for (const aluno of arrayDeAlunos) {
-        if (aluno.nota >= 6) {
-            aprovados.push(aluno);
-        }
-    }
-    return aprovados;
+    return arrayDeAlunos.filter(aluno => aluno.nota >= 6);
 }
 
 const alunosAprovadosArray = alunosAprovados(alunos);
